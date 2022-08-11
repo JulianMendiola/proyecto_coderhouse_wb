@@ -1,0 +1,309 @@
+/* ------------------INCIO-------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none
+}
+
+h1 {
+    height: 1rem;
+    color: #fff;
+    padding: 20px;
+    display:grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.inicio {
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+}
+
+.sobrenosotros{
+    text-align: center;
+    font-size: 40px;
+}
+.texto {
+    text-align: center;
+    padding: 20px;
+}
+
+body {
+    overflow-y: scroll;
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+    color: #fff;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100; 
+    display:grid;
+}
+
+/* -----------------------NAVBAR----------------------- */
+
+.nav__responsive-ul {
+    display: none;
+}
+
+.nav {
+    background-color:#002244;
+    display: flex;
+    justify-content: center;
+    border:7px double white;
+    border-color: #fff;
+    margin: 5px 5px 5px 5px; 
+}
+
+.nav__li {
+    display:inline-block;
+    padding: 12px;
+}
+
+.nav__li a {
+    color:white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav__li a:hover {
+    color: black;
+    font-size: x-large;
+    transition: 0.5s;
+}
+
+/*-----------------------RESPONSIVE--------------------*/
+
+@media screen and (max-width:500px) {
+
+
+  /* <index> */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+  body{
+    width: 100%;
+  }
+#titulo h1{
+    display: flex;
+    line-height: 15px;
+    font-size: 7vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav {
+    padding-top: 10px;
+    font-size: 2rem;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.nav li{
+    list-style: none;
+    padding-right: 100px;
+    justify-content:center;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+    font-size: 30px;
+    justify-content: center;
+}
+
+.footer{
+    margin: 0px;
+}
+
+} 
+/*--------SOBRE NOSOTROS--------*/
+.parrafo__sn {
+        font-size: 10px;
+        padding: 5px;
+        justify-content: center;
+}
+.imagenSobreNosotros {
+        float: none;
+        width:50vh;
+        padding: 5px;
+        justify-content: center;
+}
+
+/*------------PRODUCTOS-------------*/
+
+.img {
+    height: 70%;
+    width: 30%;
+    border-radius: 30px;    
+}
+
+
+
+
+
+/* -----------------------FOOTER----------------------- */
+.footer {
+    display: flex;
+    background-color: #002244;
+    justify-content: center;
+    border:7px double white;
+    border-color: #fff;
+    margin: 5px 5px 5px 5px; 
+}
+
+.footer__li {
+    color: white;
+    display: inline-block;
+    padding: 12px;
+}
+
+.footer__li:hover {
+    color: black;
+    font-size: x-large;
+    transition: 0.5s;
+}
+
+/* -----------------------FORMULARIO----------------------- */
+.flex-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: black;
+    margin: 50px 50px;
+    padding: 20px;
+    border: 20px solid white;
+    outline: 4px solid white;
+}
+
+.form {
+    min-width: 400px;
+    flex: 1;
+    text-align: center;
+    padding: 30px;
+    order: 5;
+}
+
+.form__input {
+    width: 100%;
+    padding: 7px;
+    margin: 6px 0;
+    border: none;
+    border-bottom: 3px solid bisque;
+    background: transparent;
+    color: #fff;
+}
+
+.form__input:focus {
+    background: #333;
+    outline: none;
+    border-bottom: 3px solid #5dd;
+}
+
+.form textarea {
+ 
+    resize: none;
+}
+
+.form-img {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    min-width: 1vh;
+    max-width: 1vw;
+    order: 2;
+}
+
+.form-img div {
+    padding: 10px;
+}
+
+.img-container{
+    padding: 20px;
+}
+
+.imagenFormulario{
+    width: 44vh;
+}
+
+.img-container div {
+   background-color: #fff;
+   border-radius: 50%;
+   text-align: center;
+}
+
+
+/*---------SOBRE NOSOTROS------------------------*/
+.parrafo__sn {
+    font-size: 20px;     
+}
+
+.imagenSobreNosotros{
+    border-radius: 5px;
+    width:70vh;
+    float: right;
+}
+
+/*-----------GALERIA CON FLEX-------------------*/
+
+
+.caja {
+  margin: 15px;
+  width: 46%;
+  text-align: center;  
+}
+
+.img {
+      height: 70%;
+      width: 30%;
+      border-radius: 30px;   
+      text-align: center;  
+}
+ 
+
+.titulos {
+   width: 100%;
+   text-align: center;
+   font-size: 50px;
+   margin-top: 30px;
+   margin-bottom: 30px;
+ }
+ 
+ .explicacion {
+     text-align: center;
+     font-size: 14px;
+ }
+ 
+ .precio {
+     padding: 5px;
+     text-align: center;
+ }
+
+ .modificadoresFlex{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+ }
+
+ .comprar {
+    width: 100px;
+    height: 40px;
+    color: #fff;
+    background-color: grey;
+    border-color: #fff;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    transition:1s ; 
+ }
+
+ .comprar:hover {
+    background-color: #09203f;
+ }
+ 
+ 
+
+/*---------------TRANSICIONES---------------*/

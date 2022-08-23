@@ -12,7 +12,7 @@
 }
 
 .bg-nav {
-    background-color: black;
+    background-color: #002244;
 }
 
 body {
@@ -39,8 +39,22 @@ body {
  }
 
  .nav-link:hover {
-      color:#022f5b;
+      color:black;
       font-size: x-large;
+ }
+
+ .navbar-nav .nav-link.active {
+    color:#fff;
+    transition:0.5s;
+ }
+ 
+ .navbar-nav .nav-link.active:hover {
+    color:black;
+    font-size: x-large;
+ }
+
+ .navbar-brand {
+    color: #fff;
  }
 
 
@@ -77,20 +91,8 @@ body {
 .footer {
     background-color: #002244;
     justify-content: center;
-    border-radius:  10px; ;
+    border-radius:  10px; 
     margin: 5px 5px 5px 5px;
-}
-
-.footer__li {
-    color: white;
-    display: inline-block;
-    padding: 12px;
-}
-
-.footer__li:hover {
-    color: black;
-    font-size: x-large;
-    transition: 0.5s;
 }
 
 .footer__ul{

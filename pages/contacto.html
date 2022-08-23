@@ -4,62 +4,100 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="hhtps://fontawesome.com/icons" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="../css/estilos.css">
-    <title>AmortiguadoresJulio</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <title> AmortiguadoresJulio Julio</title>
 </head>
 <body>
-  <header>
-    <!--Menu principal con navegador-->
-    <nav class="nav">
-        <ul class="nav__ul">
-            <li class="nav__li"><a href="../index.html">Inicio</a></li>
-            <li class="nav__li"><a href="../pages/productos.html">Productos</a></li>
-            <li class="nav__li"><a href="../pages/sobrenosotros.html">Sobre Nosotros</a></li>
-            <li class="nav__li"><a href="../pages/contacto.html">Mi Cuenta</a></li>
-            <li class="nav__li"><a href="../pages/contactenos.html">Contactenos</a></li>
-        </ul> 
-        <ul class="nav__responsive-ul">
-          <div class="nav__li-container">
-            <li class="nav__responsive-li"><a href="../index.html">Inicio</a></li>
-            <li class="nav__responsive-li"><a href="productos.html">Productos</a></li>
-            <li class="nav__responsive-li"><a href="sobreNosotros.html">Sobre Nosotros</a></li>
-            <li class="nav__responsive-li"><a href="contacto.html">Mi Cuenta</a></li>
-            <li class="nav__responsive-li"><a href="contactenos.html">Contactenos</a></li>
+
+  <!-- NAVBAR --> 
+    <div class="row">
+        <nav class="navbar navbar-expand-lg bg-nav fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Amortiguadores Julio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#productos">Productos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#sobreNosotros">Sobre Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#miCuenta">Mi Cuenta</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contactenos">Contactenos</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </ul> 
-    </nav>
-   </header> 
-   <div class="flex-container">
-    <div class="form-img">
-      <div class="img-container">
-          <img class="imagenFormulario" alt="imagenFormulario" src="../img/281769.png">
+        </nav>
       </div>
-    </div>
-     <form action="" class="form">
-        <div class="form__section">
-                <input type="text" class="form__input" name = "nombre" placeholder="Escriba su nombre">
-        </div>          
-        <div class="form__section">
-                <input type="email" class="form__input" name = "email" placeholder="Escriba su mail">
-        </div>
-        <div class="form__section">
-                <input type="Password" class="form__input" name = "contraseña" placeholder="Contraseña">
-        </div>
-        <div class="form__section">
-                <textarea class="form__input" name = "msj" placeholder="Escriba su mensaje"></textarea>
-        </div>
-        <div class="form__section">
-               <input type="submit" class="form__input">
-        </div>
-      </form>
-    </div>
-    <footer class="footer" style="margin-top: 260px;">
-             <ul class="footer__ul">
-                  <li class="footer__li">WSP:2235048916</li>
-                  <li class="footer__li">EMAIL:AmortiguadoresJulio@gmail.com</li>
-                  <li class="footer__li"><a href="https://www.instagram.com/amortiguadores_julio/">INSTAGRAM: AmortiguadoresJulio</a></li>
-             </ul>
-    </footer>
+      <!---------  Mi Cuenta  --------->
+   <a name="miCuenta"></a>
+   <section class="container-fluid">
+     <h2 class="h2 text-center mt-3 mb-3">Mi Cuenta</h2>
+       <div class="row">
+         <article class="col-md-6">
+           <form class="row g-3">
+             <div class="col-md-6">
+               <label for="inputEmail4" class="form-label">Email</label>
+               <input type="email" class="form-control" id="inputEmail4">
+             </div>
+             <div class="col-md-6">
+               <label for="inputPassword4" class="form-label">Contraseña</label>
+               <input type="password" class="form-control" id="inputPassword4">
+             </div>
+             <div class="col-12">
+               <label for="inputAddress" class="form-label">Dirección</label>
+               <input type="text" class="form-control" id="inputAddress" placeholder="Mateotti 49">
+             </div>
+             <div class="col-12">
+               <label for="inputAddress2" class="form-label">Vivienda</label>
+               <input type="text" class="form-control" id="inputAddress2" placeholder="Casa,Departamento,etc">
+             </div>
+             <div class="col-md-6">
+               <label for="inputCity" class="form-label">Ciudad</label>
+               <input type="text" class="form-control" id="inputCity" placeholder="Mar Del Plata">
+             </div>
+             <div class="col-md-4">
+               <label for="inputState" class="form-label">Provincia</label>
+               <select id="inputState" class="form-select">
+                 <option selected>Elegir...</option>
+                 <option>...</option>
+               </select>
+             </div>
+             <div class="col-12">
+               <button type="submit" class="btn btn-enviar">Enviar</button>
+             </div>
+           </form>
+         </article>
+         <article class="col-md-6">  
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3142.995658819679!2d-57.567921284741146!3d-38.02388067971481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584de901997394f%3A0xfef929427638c7da!2sAmortiguadores%20Julio!5e0!3m2!1ses!2sar!4v1661203769929!5m2!1ses!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </article>
+       </div>
+   </section>
+   <!--Footer-->
+   <a name="contactenos"></a>
+   <div class="row footer">
+     <a class="col-md-4 centro p-3" href="" target="_blank"><i class="bi bi-whatsapp fs-2"></i></a>
+     <a class="col-md-4 centro p-3" href="" target="_blank"><i class="bi bi-envelope fs-2"></i></a>
+     <a class="col-md-4 centro p-3" href="https://www.instagram.com/amortiguadores_julio/" target="_blank"><i class="bi bi-instagram fs-2"></i></a>
+   </div>
+   
+ </div> <!-- CIERRE DEL CONTAINER -->  
 </body>
+
+
+<!-- SCRIPT-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </html>

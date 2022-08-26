@@ -1,3 +1,4 @@
+
 /* ------------------INCIO-------------- */
 
 * {
@@ -149,16 +150,17 @@ body {
    flex-wrap: wrap;
 }
 
-.comprar {
-   width: 100px;
-   height: 40px;
-   color: #fff;
-   background-color: grey;
-   border-color: #fff;
-   font-family:Verdana, Geneva, Tahoma, sans-serif;
-   transition:1s ; 
-}
+.btn-comprar {
+    width: 100px;
+    height: 40px;
+    color: #fff;
+    background-color: grey;
+    border-color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 1s; }
+  
+  .btn-comprar:hover {
+    background-color: #09203f;
+ }
 
-.comprar:hover {
-   background-color: #09203f;
-}
+ @import './variables'

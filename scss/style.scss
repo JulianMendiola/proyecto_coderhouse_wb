@@ -1,166 +1,125 @@
-
-/* ------------------INCIO-------------- */
+/*variables*/
+$color-especial:black;
+$color-nav:#0a6cec;
 
 * {
-    margin: 0;
-    padding: 0;
-    text-decoration: none
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
 }
-
 .d-block {
-    width:100vh;
-    height:100vh;
+	width: 100vh;
+	height: 100vh;
 }
-
 .bg-nav {
-    background-color: #002244;
+	background-color:$color-especial;
 }
-
 body {
-    overflow-y: scroll;
-    color: #fff;
-    background: linear-gradient(337deg, rgba(67,60,88,1) 6%, rgba(0,1,12,1) 40%); 
-    font-family:Verdana, Geneva, Tahoma, sans-serif; 
- }
-
- .btn-enviar {
-    background-color:black ;
-    transition: all 0.5 ease-out;
-    color: #fff;
- }
-
- .btn-enviar:hover {
-    background-color:#002244;
-    transform: scale(0.8);
- }
-
- .nav-link {
-    color:#fff;
-    transition:0.5s;
- }
-
- .nav-link:hover {
-      color:black;
-      font-size: x-large;
- }
-
- .navbar-nav .nav-link.active {
-    color:#fff;
-    transition:0.5s;
- }
- 
- .navbar-nav .nav-link.active:hover {
-    color:black;
-    font-size: x-large;
- }
-
- .navbar-brand {
-    color: #fff;
- }
-
-
-.centro{
-    display: flex;
-    justify-content: center;
+	overflow-y: scroll;
+	color: #fff;
+	background: linear-gradient(337deg, #433c58 6%, #00010c 40%);
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-/* -----------------------NAVBAR----------------------- */
-
-
-
-
-/*-----------------------RESPONSIVE--------------------*/
- 
-/*--------SOBRE NOSOTROS--------*/
-
+.btn-enviar {
+	background-color: black;
+	transition: all 0.5 ease-out;
+	color: #fff;
+	&:hover {
+		background-color: #002244;
+		transform: scale(0.8);
+	}
+}
+.nav-link {
+	color: #fff;
+	transition: 0.5s;
+	&:hover {
+		color: $color-nav;
+		font-size: x-large;
+	}
+}
+.navbar-nav {
+	.nav-link.active {
+		color: #fff;
+		transition: 0.5s;
+		&:hover {
+			color: $color-nav;
+			font-size: x-large;
+		}
+	}
+}
+.navbar-brand  {
+            color: #fff;
+            transition: 0.5s;
+            &:hover {
+                color: $color-nav;
+                font-size: x-large;
+            }
+}
+.centro {
+	display: flex;
+	justify-content: center;
+}
 .parrafo__sn {
-        font-size: 3vh;
-        padding: 5px;
-        justify-content: center;
-        margin-top: 10px;
-        color: #fff;
+	font-size: 3vh;
+	padding: 5px;
+	justify-content: center;
+	margin-top: 10px;
+	color: #fff;
 }
-
- 
-#video {
-    grid-area: 3 / 1 / 5 / 3; 
-}
-
-.video{
-    padding-left: 30px;
-    height: 30vw;
-    width:30vw;
-}
-
-/* -----------------------FOOTER----------------------- */
 .footer {
-    background-color: #002244;
-    justify-content: center;
-    border-radius:  10px; 
-    margin: 5px 5px 5px 5px;
+	background-color: #002244;
+	justify-content: center;
+	border-radius: 10px;
+	margin: 5px 5px 5px 5px;
 }
-
-.footer__ul{
-    display: flex;
-    justify-content: space-around;
+.footer__ul {
+	display: flex;
+	justify-content: space-around;
 }
-
-/* -----------------------FORMULARIO----------------------- */
-
-/*-----------GALERIA CON FLEX-------------------*/
 .caja {
-    margin: 15px;
-    width: 46%;
-    text-align: center;  
-  }
-  
-  .img {
-        height: 70%;
-        width: 30%;
-        border-radius: 30px;   
-        text-align: center;  
-  }
-   
-  
-  .titulos {
-     width: 100%;
-     text-align: center;
-     font-size: 50px;
-     margin-top: 30px;
-     margin-bottom: 30px;
-     color:#fff
-   }
-   
-   
-   .explicacion {
-    text-align: center;
-    font-size: 14px;
-    color: #fff;
+	margin: 15px;
+	width: 46%;
+	text-align: center;
 }
-
+.img {
+	height: 70%;
+	width: 30%;
+	border-radius: 30px;
+	text-align: center;
+}
+.titulos {
+	width: 100%;
+	text-align: center;
+	font-size: 50px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	color: #fff;
+}
+.explicacion {
+	text-align: center;
+	font-size: 14px;
+	color: #fff;
+}
 .precio {
-    padding: 5px;
-    text-align: center;
-    color: #fff;
+	padding: 5px;
+	text-align: center;
+	color: #fff;
 }
-
-.modificadoresFlex{
-   display: flex;
-   align-items: center;
-   flex-direction: row;
-   flex-wrap: wrap;
+.modificadoresFlex {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
-
 .btn-comprar {
-    width: 100px;
-    height: 40px;
-    color: #fff;
-    background-color: grey;
-    border-color: #fff;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    transition: 1s; }
-  
-  .btn-comprar:hover {
-    background-color: #09203f;
- }
-
- @import './variables'
+	width: 100px;
+	height: 40px;
+	color: #fff;
+	background-color: grey;
+	border-color: #fff;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	transition: 1s;
+	&:hover {
+		background-color: #09203f;
+    }
+} 

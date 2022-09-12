@@ -1,7 +1,12 @@
 /*variables*/
 $color-especial:black;
-$color-nav:#0a6cec;
 
+$Colores:(
+    "azul":#09203f,
+    "celeste": #0a6cec,
+  );
+
+/*inicio*/
 * {
 	margin: 0;
 	padding: 0;
@@ -20,8 +25,11 @@ body {
 	background: linear-gradient(337deg, #433c58 6%, #00010c 40%);
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+
+/*estilos*/
 .btn-enviar {
-	background-color: black;
+	background-color:grey;
 	transition: all 0.5 ease-out;
 	color: #fff;
 	&:hover {
@@ -33,7 +41,7 @@ body {
 	color: #fff;
 	transition: 0.5s;
 	&:hover {
-		color: $color-nav;
+		color:map-get( $Colores, "celeste");
 		font-size: x-large;
 	}
 }
@@ -42,19 +50,19 @@ body {
 		color: #fff;
 		transition: 0.5s;
 		&:hover {
-			color: $color-nav;
+			color:map-get($Colores,"celeste");
 			font-size: x-large;
 		}
 	}
 }
 .navbar-brand  {
-            color: #fff;
-            transition: 0.5s;
-            &:hover {
-                color: $color-nav;
-                font-size: x-large;
-            }
+           @extend .nav-link.active;
+		   color:#09203f;
+		   &:hover {
+			color:#fff
+		   }
 }
+
 .centro {
 	display: flex;
 	justify-content: center;
@@ -66,6 +74,7 @@ body {
 	margin-top: 10px;
 	color: #fff;
 }
+/*footer*/
 .footer {
 	background-color: #002244;
 	justify-content: center;
@@ -76,6 +85,7 @@ body {
 	display: flex;
 	justify-content: space-around;
 }
+/*productos*/
 .caja {
 	margin: 15px;
 	width: 46%;
@@ -91,7 +101,7 @@ body {
 	width: 100%;
 	text-align: center;
 	font-size: 50px;
-	margin-top: 30px;
+	margin-top: 100px;
 	margin-bottom: 30px;
 	color: #fff;
 }
@@ -111,11 +121,12 @@ body {
 	flex-direction: row;
 	flex-wrap: wrap;
 }
+/*estilos*/
 .btn-comprar {
 	width: 100px;
 	height: 40px;
 	color: #fff;
-	background-color: grey;
+	background-color:grey;
 	border-color: #fff;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	transition: 1s;
@@ -123,3 +134,14 @@ body {
 		background-color: #09203f;
     }
 } 
+
+/*mixins*/
+@mixin reset {
+	margin:0;
+	padding:0;
+	text-decoration:none;
+}
+
+*{
+	@include reset;
+}

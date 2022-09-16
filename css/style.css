@@ -59,7 +59,6 @@ body {
 
 /*footer*/
 .footer {
-  background-color: #002244;
   justify-content: center;
   border-radius: 10px;
   margin: 5px 5px 5px 5px; }
@@ -116,8 +115,26 @@ body {
   .btn-comprar:hover {
     background-color: #09203f; }
 
+.card-title {
+  color: #fff;
+  text-align: center; }
+
+.card-texto {
+  color: #00010c; }
+
+.row {
+  margin-top: calc(5 * var(--bs-gutter-y)); }
+
 /*mixins*/
 * {
   margin: 0;
   padding: 0;
   text-decoration: none; }
+
+/*media query*/
+@media only screen and (max-width: 500px) {
+  .bg-nav {
+    background-color: #002244; }
+  .d-block {
+    height: 80vh;
+    width: 80vh; } }

@@ -1,4 +1,5 @@
 /*variables*/
+/*mixin*/
 /*inicio*/
 * {
   margin: 0;
@@ -41,6 +42,7 @@ body {
     color: #0a6cec;
     font-size: x-large; }
 
+/*extend*/
 .navbar-brand {
   color: #09203f; }
   .navbar-brand:hover {
@@ -83,7 +85,6 @@ body {
   width: 100%;
   text-align: center;
   font-size: 50px;
-  margin-top: 100px;
   margin-bottom: 30px;
   color: #fff; }
 
@@ -125,16 +126,12 @@ body {
 .row {
   margin-top: calc(5 * var(--bs-gutter-y)); }
 
-/*mixins*/
-* {
-  margin: 0;
-  padding: 0;
-  text-decoration: none; }
-
 /*media query*/
 @media only screen and (max-width: 500px) {
   .bg-nav {
     background-color: #002244; }
   .d-block {
     height: 80vh;
-    width: 80vh; } }
+    width: 80vh; }
+  .col-md-4 {
+    padding: 10px; } }

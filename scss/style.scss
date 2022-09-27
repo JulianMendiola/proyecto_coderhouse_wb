@@ -6,12 +6,27 @@ $Colores:(
     "celeste": #0a6cec,
   );
 
-/*inicio*/
-* {
-	margin: 0;
-	padding: 0;
-	text-decoration: none;
+
+/*mixin*/
+@mixin reset() {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
 }
+
+@mixin nav {
+	color: #fff;
+	transition: 0.5s;
+	&:hover {
+		color:map-get( $Colores, "celeste");
+		font-size: x-large;
+	}
+}
+/*inicio*/
+*{
+	@include reset();
+}
+
 .d-block {
 	width: 100vh;
 	height: 100vh;
@@ -38,23 +53,13 @@ body {
 	}
 }
 .nav-link {
-	color: #fff;
-	transition: 0.5s;
-	&:hover {
-		color:map-get( $Colores, "celeste");
-		font-size: x-large;
-	}
+	@include nav;
 }
-.navbar-nav {
-	.nav-link.active {
-		color: #fff;
-		transition: 0.5s;
-		&:hover {
-			color:map-get($Colores,"celeste");
-			font-size: x-large;
-		}
-	}
+.navbar-nav{
+	.nav-link.active{
+		@include nav;}
 }
+/*extend*/
 .navbar-brand  {
            @extend .nav-link.active;
 		   color:#09203f;
@@ -101,7 +106,6 @@ body {
 	width: 100%;
 	text-align: center;
 	font-size: 50px;
-	margin-top: 100px;
 	margin-bottom: 30px;
 	color: #fff;
 }
@@ -146,16 +150,6 @@ body {
 .row {
 	margin-top: calc(5 * var(--bs-gutter-y))
 }	
-/*mixins*/
-@mixin reset {
-	margin:0;
-	padding:0;
-	text-decoration:none;
-}
-
-*{
-	@include reset;
-}
 
 /*media query*/
 
@@ -167,6 +161,10 @@ body {
 	.d-block {
 		height:80vh;
 		width: 80vh;
+	}
+
+	.col-md-4 {
+		padding: 10px;
 	}
 	
 }

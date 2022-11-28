@@ -1,0 +1,36 @@
+body{
+  background-color: black;
+}
+
+.tituloCarrito{
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  color: rgb(251, 250, 250);
+  font-family: "Segoe IU", sans-serif;
+  font-weight: 700;
+}
+
+/* Titulo cambiante */
+.saludo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vh;
+    color: rgb(253, 249, 249);
+  }
+    
+
+  .carro{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+    font-weight: 500;
+  }
+
+
+
+
+  
+ 
